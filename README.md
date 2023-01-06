@@ -1,0 +1,2 @@
+# checkers
+Javascript Checkers Game
