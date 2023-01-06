@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="change(1)" style="font-size: 20px; padding: 20px;">Player 1</button><br>
+    <button onclick="change(2)" style="font-size: 20px; padding: 20px;">Player 2</button><br><br>
+    <button onclick="changeAdd()" style="font-size: 20px; padding: 20px;">ADD</button><br><br><br>
+    <div class="board">
+        <canvas id="board" style="position: absolute;">
+
+        </canvas>
+    </div>
+    <img src="king.png" width="100px" style="position:absolute; top:0; display: none;" id="king">
+    <div class="screen">
+        <div class="yo">
+            Force Take:<br>
+            <button onclick="forceJump(true)">ON</button>
+            <button onclick="forceJump(false)">OFF</button>
+        </div>
+    </div>
+</body>
+<!-- <script src="brain.js"></script> -->
+<script src="drawingTools.js"></script>
+<script src="main.js"></script>
+<script src="game.js"></script>
+<script src="AI.js"></script>
+<script src="AIEval.js"></script>
+<script src="extra.js"></script>
+<!-- <script src="neuralNetwork1.js"></script> -->
+
+</html>
